@@ -1,4 +1,4 @@
-package com.usuario.service.controlador;
+package com.usuario.service.controladores;
 
 import java.util.List;
 
@@ -44,6 +44,6 @@ public class UsuarioController {
 	@PostMapping
 	public ResponseEntity<Usuario> guardarUsuario(@RequestBody Usuario usuario){
 		Usuario nuevoUsuario = usuarioService.save(usuario);
-		return ResponseEntity.ok( usuario );
+		return ResponseEntity.ok( nuevoUsuario );
 	}
 }
