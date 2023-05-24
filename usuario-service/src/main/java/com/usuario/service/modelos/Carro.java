@@ -4,6 +4,7 @@ public class Carro {
 
 	private String marca;
 	private String modelo;
+	private int usuarioId;
 
 	public Carro() {
 		super();
@@ -23,6 +24,14 @@ public class Carro {
 
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
+	}
+
+	public int getUsuarioId() {
+		return usuarioId;
+	}
+
+	public void setUsuarioId(int usuarioId) {
+		this.usuarioId = usuarioId;
 	}
 
 }

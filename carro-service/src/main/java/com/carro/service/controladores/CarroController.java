@@ -50,10 +50,6 @@ public class CarroController {
 	@GetMapping("/usuario/{usuarioId}")
 	public ResponseEntity<List<Carro>> listarCarrosPorUsuarioId(@PathVariable("usuarioId") int id){
 		List<Carro> carros = carroService.getCarroByUsuarioId(id);
-		if (carros.isEmpty()) {
-			return ResponseEntity.noContent().build();
-		}
-		
 		return ResponseEntity.ok(carros);
 	}
 }
