@@ -6,5 +6,5 @@ eureka:
     register-with-eureka: true
     service-url:
       default-zone: http://localhost:8761/eureka
-    instance:
-      instance-id: ${spring.application.name}:${server.port}
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
