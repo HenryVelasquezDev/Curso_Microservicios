@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          default-label: multiple-instances # nombre de la rama Git que se quiera referenciar
+          default-label: gateway # nombre de la rama Git que se quiera referenciar
           uri: https://github.com/HenryVelasquezDev/Curso_Microservicios
           search-paths: config-data
   application:
