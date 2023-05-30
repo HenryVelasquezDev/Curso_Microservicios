@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.usuario.service.modelos.Moto;
 
-@FeignClient( name = "moto-service",url = "http://localhost:8003")
+@FeignClient( name = "moto-service"/*,url = "http://localhost:8003"*/)//por uso de gateway ya no se puede dejar lña url estatica
 @RequestMapping("/moto")
 public interface MotoFeignClient {
 
